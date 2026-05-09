@@ -26,19 +26,19 @@ interface RouteProps {
 const routeList: RouteProps[] = [
   {
     href: "#features",
-    label: "Features",
+    label: "Overview",
   },
   {
     href: "#testimonials",
-    label: "Testimonials",
+    label: "Methodology",
   },
   {
     href: "#pricing",
-    label: "Pricing",
+    label: "Future",
   },
   {
     href: "#faq",
-    label: "FAQ",
+    label: "Contributors",
   },
 ];
 
@@ -55,7 +55,7 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
             >
               <LogoIcon />
-              ShadcnUI/React
+              Grid Edge Computing
             </a>
           </NavigationMenuItem>
 
@@ -96,7 +96,7 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+                    href="https://github.com/nikoloda/OSU_Islanding"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",

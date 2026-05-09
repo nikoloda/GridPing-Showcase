@@ -24,27 +24,27 @@ interface SociaNetworkslProps {
 const teamList: TeamProps[] = [
   {
     imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
-    position: "Product Manager",
+    name: "Daniel Nikolov",
+    position: "Backend Developer",
     socialNetworks: [
       {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/leopoldo-miranda/",
       },
       {
-        name: "Facebook",
+        name: "Handshake",
         url: "https://www.facebook.com/",
       },
       {
-        name: "Instagram",
+        name: "Email",
         url: "https://www.instagram.com/",
       },
     ],
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
-    position: "Tech Lead",
+    name: "Dr. Eduardo Cotilla-Sanchez",
+    position: "Head Researcher",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -62,7 +62,7 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
+    name: "Lesly Rojas",
     position: "Frontend Developer",
     socialNetworks: [
       {
@@ -114,14 +114,13 @@ export const Team = () => {
     >
       <h2 className="text-3xl md:text-4xl font-bold">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Our Dedicated{" "}
+          Our {" "}
         </span>
-        Crew
+        Research Team
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">

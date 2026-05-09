@@ -18,16 +18,20 @@ export const About = () => {
             <div className="pb-6">
               <h2 className="text-3xl md:text-4xl font-bold">
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                  About{" "}
+                  Research{" "}
                 </span>
-                Company
+                Motivation
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+                This researach centers around the incorporation of computing resources, algorithms, and applications 
+                at the grid edge to decrease grid strain, imrpove resilience, and lower costs for users. Currently, end 
+                users of the power grid have minimal access to data and updates from utilities regarding the state of the 
+                grid. This research proposes a concept which leverages the processing power found in modern smart meters to 
+                distribute the processing, simulation, and publishing of grid state data to the grid edge. In addition, concept 
+                applications were created which first ingest and process meter reading data, then send publish the records 
+                to an AWS-hosted database. A frontend then retrieves the data and displays metrics, such as power quality, 
+                along with reccomended actions to the user.
+              
               </p>
             </div>
 

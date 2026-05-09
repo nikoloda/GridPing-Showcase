@@ -10,27 +10,27 @@ interface FeatureProps {
 const features: FeatureProps[] = [
   {
     icon: <MedalIcon />,
-    title: "Accessibility",
+    title: "Data Received",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "The smart meter measures the power going through it or receives a global state from the utility",
   },
   {
     icon: <MapIcon />,
-    title: "Community",
+    title: "Data Processing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "The current state is compared to the ideal/ expected state to calculate power quality, number of islands, etc.",
   },
   {
     icon: <PlaneIcon />,
-    title: "Scalability",
+    title: "Data Storage",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "The record is inserted locally into a SQLite DB and/or remotely on an AWS postgreSQL DB",
   },
   {
     icon: <GiftIcon />,
-    title: "Gamification",
+    title: "Displaying",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "The frontend requests data from the cloud database to show the users at the grid edge",
   },
 ];
 
