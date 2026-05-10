@@ -16,7 +16,7 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
+import logo from "../assets/logo.png";
 
 interface RouteProps {
   href: string;
@@ -29,16 +29,12 @@ const routeList: RouteProps[] = [
     label: "Overview",
   },
   {
-    href: "#testimonials",
-    label: "Methodology",
-  },
-  {
-    href: "#pricing",
-    label: "Future",
-  },
-  {
     href: "#faq",
-    label: "Contributors",
+    label: "FAQ",
+  },
+  {
+    href: "#team",
+    label: "Team",
   },
 ];
 
@@ -52,9 +48,9 @@ export const Navbar = () => {
             <a
               rel="noreferrer noopener"
               href="/"
-              className="ml-2 font-bold text-xl flex"
+              className="ml-2 font-bold text-xl flex items-center"
             >
-              <LogoIcon />
+              <img src={logo} alt="Grid Edge Computing" className="w-8 h-8 mr-3" />
               Grid Edge Computing
             </a>
           </NavigationMenuItem>
@@ -129,7 +125,7 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="https://github.com/nikoloda/OSU_Islanding"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >

@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
+import dataFlow from "../assets/data-flow.png";
 
 interface FeatureProps {
   icon: JSX.Element;
@@ -51,6 +52,14 @@ export const HowItWorks = () => {
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
         dolor pariatur sit!
       </p>
+
+      <div className="flex justify-center mb-12">
+        <img
+          src={dataFlow}
+          alt="Illustration showing the grid-edge computing flowchart"
+          className="w-full max-w-3xl object-contain"
+        />
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {features.map(({ icon, title, description }: FeatureProps) => (

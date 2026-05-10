@@ -7,12 +7,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 interface TeamProps {
   imageUrl: string;
   name: string;
   position: string;
+  caption?: string;
   socialNetworks: SociaNetworkslProps[];
 }
 
@@ -23,21 +24,14 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/150?img=35",
+    imageUrl: "/src/assets/headshot.jpeg",
     name: "Daniel Nikolov",
     position: "Backend Developer",
+    caption: "Undergraduate senior focused on grid-edge algorithms and simulation.",
     socialNetworks: [
       {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Handshake",
-        url: "https://www.facebook.com/",
-      },
-      {
-        name: "Email",
-        url: "https://www.instagram.com/",
       },
     ],
   },
@@ -45,49 +39,23 @@ const teamList: TeamProps[] = [
     imageUrl: "https://i.pravatar.cc/150?img=60",
     name: "Dr. Eduardo Cotilla-Sanchez",
     position: "Head Researcher",
+    caption: "Head coordinator and expert in power systems and island detection research.",
     socialNetworks: [
       {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/leopoldo-miranda/",
       },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
+    imageUrl: "/src/assets/lesly_rojas_headshot.jpg",
     name: "Lesly Rojas",
     position: "Frontend Developer",
+    caption: "Frontend engineer building data visualizations and UI for the project.",
     socialNetworks: [
       {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
-  },
-  {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
       },
     ],
   },
@@ -98,12 +66,6 @@ export const Team = () => {
     switch (iconName) {
       case "Linkedin":
         return <Linkedin size="20" />;
-
-      case "Facebook":
-        return <Facebook size="20" />;
-
-      case "Instagram":
-        return <Instagram size="20" />;
     }
   };
 
@@ -123,12 +85,12 @@ export const Team = () => {
         
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
+      <div className="grid justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10">
         {teamList.map(
-          ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
+          ({ imageUrl, name, position, socialNetworks, caption }: TeamProps) => (
             <Card
               key={name}
-              className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
+              className="bg-muted/50 relative mt-8 flex w-full max-w-sm flex-col justify-center items-center"
             >
               <CardHeader className="mt-8 flex justify-center items-center pb-2">
                 <img
@@ -143,7 +105,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>{caption}</p>
               </CardContent>
 
               <CardFooter>

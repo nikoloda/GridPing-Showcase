@@ -1,4 +1,4 @@
-import { LogoIcon } from "./Icons";
+import logo from "../assets/logo.png";
 
 export const Footer = () => {
   return (
@@ -12,9 +12,9 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex"
           >
-            <LogoIcon />
-            Grid Edge Showcase
-          </a>
+              <img src={logo} alt="Grid Edge Computing" className="w-8 h-8 mr-3" />
+              Grid Edge Computing
+            </a>
         </div>
 
         <div className="flex flex-col gap-2">
@@ -152,14 +152,14 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2026 Grid Edge Showcase — related research: 
+          &copy; 2024 Landing page made by{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"
             href="https://github.com/nikoloda/OSU_Islanding"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            OSU_Islanding
+            Leo Miranda
           </a>
         </h3>
       </section>
