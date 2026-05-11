@@ -8,6 +8,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
+import headshot from "../assets/headshot.jpeg";
+import leslyHeadshot from "../assets/lesly_rojas_headshot.jpg";
 
 interface TeamProps {
   imageUrl: string;
@@ -24,7 +26,7 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "/src/assets/headshot.jpeg",
+    imageUrl: headshot,
     name: "Daniel Nikolov",
     position: "Backend Developer",
     caption: "Undergraduate senior focused on grid-edge algorithms and simulation.",
@@ -48,7 +50,7 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "/src/assets/lesly_rojas_headshot.jpg",
+    imageUrl: leslyHeadshot,
     name: "Lesly Rojas",
     position: "Frontend Developer",
     caption: "Frontend engineer building data visualizations and UI for the project.",

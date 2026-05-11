@@ -1,6 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import simpleMode from "../assets/simpleMode.png";
+import headshot from "../assets/headshot.jpeg";
 
 export const HeroCards = () => {
   return (
@@ -9,7 +10,7 @@ export const HeroCards = () => {
       <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <Avatar>
-            <AvatarImage alt="" src="/src/assets/headshot.jpeg" />
+            <AvatarImage alt="" src={headshot} />
             <AvatarFallback>SH</AvatarFallback>
           </Avatar>
 
