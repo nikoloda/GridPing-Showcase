@@ -1,34 +1,37 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
 import dataFlow from "../assets/data-flow.png";
+import smartMeter from "../assets/smart-meter.png";
+import dataProcessing from "../assets/data-processing.png";
+import database from "../assets/database.png";
+import gauge from "../assets/gauge.png";
 
 interface FeatureProps {
-  icon: JSX.Element;
+  iconSrc: string;
   title: string;
   description: string;
 }
 
 const features: FeatureProps[] = [
   {
-    icon: <MedalIcon />,
+    iconSrc: smartMeter,
     title: "Data Received",
     description:
       "The smart meter measures the power going through it or receives a global state from the utility",
   },
   {
-    icon: <MapIcon />,
+    iconSrc: dataProcessing,
     title: "Data Processing",
     description:
       "The current state is compared to the ideal/ expected state to calculate power quality, number of islands, etc.",
   },
   {
-    icon: <PlaneIcon />,
+    iconSrc: database,
     title: "Data Storage",
     description:
       "The record is inserted locally into a SQLite DB and/or remotely on an AWS postgreSQL DB",
   },
   {
-    icon: <GiftIcon />,
+    iconSrc: gauge,
     title: "Displaying",
     description:
       "The frontend requests data from the cloud database to show the users at the grid edge",
@@ -62,14 +65,14 @@ export const HowItWorks = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {features.map(({ icon, title, description }: FeatureProps) => (
+        {features.map(({ iconSrc, title, description }: FeatureProps) => (
           <Card
             key={title}
             className="bg-muted/50"
           >
             <CardHeader>
               <CardTitle className="grid gap-4 place-items-center">
-                {icon}
+                <img src={iconSrc} alt={title} className="w-12 h-12 object-contain" />
                 {title}
               </CardTitle>
             </CardHeader>
