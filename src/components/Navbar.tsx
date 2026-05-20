@@ -16,7 +16,7 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import logo from "../assets/logo.png";
+import logo from "../assets/GridPing.png";
 
 interface RouteProps {
   href: string;
@@ -50,8 +50,7 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex items-center"
             >
-              <img src={logo} alt="Grid Edge Computing" className="w-8 h-8 mr-3" />
-              Grid Edge Computing
+              <img src={logo} alt="GridPing" className="w-25 h-8 mr-2 object-contain" />
             </a>
           </NavigationMenuItem>
 

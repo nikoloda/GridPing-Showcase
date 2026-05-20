@@ -12,8 +12,8 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex"
           >
-              <img src={logo} alt="Grid Edge Computing" className="w-8 h-8 mr-3" />
-              Grid Edge Computing
+              <img src={logo} alt="GridPing Logo" className="w-8 h-8 mr-3" />
+              GridPing
             </a>
         </div>
 
