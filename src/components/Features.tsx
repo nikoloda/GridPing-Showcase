@@ -6,39 +6,45 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+import image from "../assets/react.png";
+import image3 from "../assets/aws.png";
+import image4 from "../assets/julia.png";
+import image5 from "../assets/lambda.png";
+import image6 from "../assets/postgresql.png";
+import image7 from "../assets/powermodels.svg";
 
 interface FeatureProps {
   title: string;
   description: string;
   image: string;
+  secondaryImage: string;
 }
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Smart Meter",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
     image: image4,
+    secondaryImage: image7,
   },
   {
-    title: "Intuitive user interface",
+    title: "Cloud Hosted",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
     image: image3,
+    secondaryImage: image6,
   },
   {
-    title: "AI-Powered insights",
+    title: "User Application",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
     image: image,
+    secondaryImage: image5,
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
   "Reviews",
   "Features",
   "Pricing",
@@ -50,15 +56,17 @@ const featureList: string[] = [
 ];
 
 export const Features = () => {
+  const imageClassName = "h-20 w-44 object-contain mx-auto md:w-52";
+
   return (
     <section
       id="features"
       className="container py-24 sm:py-32 space-y-8"
     >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
+        Development{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
+          Stack
         </span>
       </h2>
 
@@ -76,7 +84,7 @@ export const Features = () => {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {features.map(({ title, description, image }: FeatureProps) => (
+        {features.map(({ title, description, image, secondaryImage }: FeatureProps) => (
           <Card key={title}>
             <CardHeader>
               <CardTitle>{title}</CardTitle>
@@ -84,11 +92,17 @@ export const Features = () => {
 
             <CardContent>{description}</CardContent>
 
-            <CardFooter>
+            <CardFooter className="flex flex-col items-center gap-3">
               <img
                 src={image}
-                alt="About feature"
-                className="w-[200px] lg:w-[300px] mx-auto"
+                alt={`${title} primary logo`}
+                className={imageClassName}
+              />
+              <div className="h-px w-14 bg-border/80" />
+              <img
+                src={secondaryImage}
+                alt={`${title} secondary logo`}
+                className={imageClassName}
               />
             </CardFooter>
           </Card>

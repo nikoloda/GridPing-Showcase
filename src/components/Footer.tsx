@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/GridPing.png";
 
 export const Footer = () => {
   return (
@@ -10,11 +10,10 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex"
+            className="flex items-center"
           >
-              <img src={logo} alt="GridPing Logo" className="w-8 h-8 mr-3" />
-              GridPing
-            </a>
+            <img src={logo} alt="GridPing" className="w-25 h-8 object-contain" />
+          </a>
         </div>
 
         <div className="flex flex-col gap-2">
@@ -152,14 +151,14 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
+          Landing page made by{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"
-            href="https://github.com/nikoloda/OSU_Islanding"
+            href="https://www.linkedin.com/in/danielv-nikolov"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            Daniel Nikolov
           </a>
         </h3>
       </section>

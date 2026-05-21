@@ -8,7 +8,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
-import headshot from "../assets/headshot.jpeg";
+import danielHeadshot from "../assets/headshot.jpeg";
+import ecsHeadshot from "../assets/ECS_Headshot.jpg";
 import leslyHeadshot from "../assets/lesly_rojas_headshot.jpg";
 
 interface TeamProps {
@@ -26,19 +27,19 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: headshot,
+    imageUrl: danielHeadshot,
     name: "Daniel Nikolov",
     position: "Backend Developer",
     caption: "Undergraduate senior focused on grid-edge algorithms and simulation.",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/danielv-nikolov",
       },
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=60",
+    imageUrl: ecsHeadshot,
     name: "Dr. Eduardo Cotilla-Sanchez",
     position: "Head Researcher",
     caption: "Head coordinator and expert in power systems and island detection research.",

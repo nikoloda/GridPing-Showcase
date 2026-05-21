@@ -28,7 +28,7 @@ export const HeroCards = () => {
         </CardContent>
       </Card>
 
-      <Card className="absolute top-[90px] left-[50px] w-72 overflow-hidden drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[90px] left-[50px] w-72 overflow-hidden drop-shadow-xl shadow-black/10">
         <CardContent className="p-0">
           <img
             src={simpleMode}
@@ -38,7 +38,7 @@ export const HeroCards = () => {
         </CardContent>
       </Card>
 
-      <Card className="absolute w-[350px] right-[5px] bottom-[-65px] overflow-hidden drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute w-[350px] right-[5px] bottom-[-65px] overflow-hidden drop-shadow-xl shadow-black/10">
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <Avatar>
             <AvatarImage alt="" src={headshot} />

@@ -29,7 +29,6 @@ Build your React landing page effortlessly with the required sections to your pr
 
 - [x] Fully Responsive Design
 - [x] User Friendly Navigation
-- [x] Dark Mode
 - [x] Meta tags
 
 ## How to install
