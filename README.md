@@ -2,8 +2,9 @@
 
 ## <a href="https://ui.shadcn.com/" target="_blank">ShadcnUI</a> + <a href="https://react.dev/" target="_blank">React</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
 
-![GridPing-Showcase](https://github.com/nikoloda/GridPing-Showcase/blob/d192ab8fefad8109541aa15a0fc81d8be2c5a783/src/assets/GridPing.png)
-
+<div style="background: #fff; display: inline-block; padding: 12px; border-radius: 8px;">
+	<img src="https://github.com/nikoloda/GridPing-Showcase/blob/d192ab8fefad8109541aa15a0fc81d8be2c5a783/src/assets/GridPing.png" alt="GridPing-Showcase" />
+</div>
 
 Demo and Showcase of our GridPing Application: <a href="https://gridping.vercel.app/" target="_blank">Link to Site</a>
 
