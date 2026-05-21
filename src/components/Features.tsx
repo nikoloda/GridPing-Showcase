@@ -1,4 +1,3 @@
-import { Badge } from "./ui/badge";
 import {
   Card,
   CardContent,
@@ -24,35 +23,24 @@ const features: FeatureProps[] = [
   {
     title: "Smart Meter",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Receives data and processes .m files using lightweight code in Julia with the PowerModels.jl library.",
     image: image4,
     secondaryImage: image7,
   },
   {
     title: "Cloud Hosted",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Records update an AWS-hosted PostgreSQL database to allow for asynchronous communication with frontend.",
     image: image3,
     secondaryImage: image6,
   },
   {
     title: "User Application",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "The user application connects to an AWS Lambda function to retrieve records, allowing them to be rendered in the frontend.",
     image: image,
     secondaryImage: image5,
   },
-];
-
-const featureList: string[] = [
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
 ];
 
 export const Features = () => {
@@ -70,18 +58,9 @@ export const Features = () => {
         </span>
       </h2>
 
-      <div className="flex flex-wrap md:justify-center gap-4">
-        {featureList.map((feature: string) => (
-          <div key={feature}>
-            <Badge
-              variant="secondary"
-              className="text-sm"
-            >
-              {feature}
-            </Badge>
-          </div>
-        ))}
-      </div>
+      <h3 className="text-center text-2xl font-bold tracking-wide text-foreground">
+        Pipeline Stages:
+      </h3>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map(({ title, description, image, secondaryImage }: FeatureProps) => (

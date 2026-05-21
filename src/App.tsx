@@ -13,7 +13,7 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div id="top">
       <Navbar />
       <Hero />
       <MapVisualization />
@@ -25,7 +25,7 @@ function App() {
       <Team />
       <Footer />
       <ScrollToTop />
-    </>
+    </div>
   );
 }
 

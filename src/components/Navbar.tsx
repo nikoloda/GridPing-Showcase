@@ -50,7 +50,7 @@ export const Navbar = () => {
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
-              href="/"
+              href="#top"
               className="ml-2 font-bold text-xl flex items-center"
             >
               <img src={logo} alt="GridPing" className="w-25 h-8 mr-2 object-contain" />

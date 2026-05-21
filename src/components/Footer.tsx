@@ -9,7 +9,7 @@ export const Footer = () => {
         <div className="col-span-full xl:col-span-2">
           <a
             rel="noreferrer noopener"
-            href="/"
+            href="#top"
             className="flex items-center"
           >
             <img src={logo} alt="GridPing" className="w-25 h-8 object-contain" />
