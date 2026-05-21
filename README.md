@@ -5,7 +5,7 @@
 ![GridPing-Showcase](https://github.com/nikoloda/GridPing-Showcase/blob/d192ab8fefad8109541aa15a0fc81d8be2c5a783/src/assets/GridPing.png)
 
 
-Demo and Showcase of our GridPing Application<a href="https://gridping.vercel.app/" target="_blank">Link to Site</a>
+Demo and Showcase of our GridPing Application: <a href="https://gridping.vercel.app/" target="_blank">Link to Site</a>
 
 
 # GridPing — Grid Edge Computing Showcase
@@ -65,4 +65,5 @@ Open http://localhost:5173 in your browser. The Application Demo is available in
 - This site uses a light-only theme; dark-mode styles and toggles have been removed.
 - The GridPing logo links scroll to the top of the page.
 
-If you'd like a more detailed developer guide or additional examples for the demo app, tell me which parts you want expanded.
+Contact:
+Daniel Nikolov - nikoloda@oregonstate.edu
