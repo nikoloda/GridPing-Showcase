@@ -1,5 +1,4 @@
-import { Statistics } from "./Statistics";
-import pilot from "../assets/pilot.png";
+import pilot from "../assets/logo.png";
 
 export const About = () => {
   return (
@@ -35,7 +34,7 @@ export const About = () => {
               </p>
             </div>
 
-            <Statistics />
+            
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Linkedin } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import danielHeadshot from "../assets/headshot.jpeg";
 import ecsHeadshot from "../assets/ECS_Headshot.jpg";
 import leslyHeadshot from "../assets/lesly_rojas_headshot.jpg";
@@ -36,6 +36,10 @@ const teamList: TeamProps[] = [
         name: "Linkedin",
         url: "https://www.linkedin.com/in/danielv-nikolov",
       },
+      {
+        name: "Email",
+        url: "mailto:nikoloda@oregonstate.edu",
+      },
     ],
   },
   {
@@ -46,8 +50,9 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/eduardo-cotilla-sanchez-30640935/",
       },
+      // add email here if available
     ],
   },
   {
@@ -58,8 +63,9 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/leslyrojascaloca/",
       },
+      // add email here if available
     ],
   },
 ];
@@ -69,6 +75,8 @@ export const Team = () => {
     switch (iconName) {
       case "Linkedin":
         return <Linkedin size="20" />;
+      case "Email":
+        return <Mail size="20" />;
     }
   };
 
@@ -111,22 +119,21 @@ export const Team = () => {
                 <p>{caption}</p>
               </CardContent>
 
-              <CardFooter>
+              <CardFooter className="gap-2">
                 {socialNetworks.map(({ name, url }: SociaNetworkslProps) => (
-                  <div key={name}>
-                    <a
-                      rel="noreferrer noopener"
-                      href={url}
-                      target="_blank"
-                      className={buttonVariants({
-                        variant: "ghost",
-                        size: "sm",
-                      })}
-                    >
-                      <span className="sr-only">{name} icon</span>
-                      {socialIcon(name)}
-                    </a>
-                  </div>
+                  <a
+                    key={name}
+                    rel="noreferrer noopener"
+                    href={url}
+                    target={url.startsWith("mailto:") ? undefined : "_blank"}
+                    className={buttonVariants({
+                      variant: "ghost",
+                      size: "sm",
+                    })}
+                  >
+                    <span className="sr-only">{name} icon</span>
+                    {socialIcon(name)}
+                  </a>
                 ))}
               </CardFooter>
             </Card>

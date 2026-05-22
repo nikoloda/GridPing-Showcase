@@ -1,17 +1,12 @@
-# GridPing Landing Page
-
-## <a href="https://ui.shadcn.com/" target="_blank">ShadcnUI</a> + <a href="https://react.dev/" target="_blank">React</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
-
-<div style="background: #fff; display: inline-block; padding: 12px; border-radius: 8px;">
-	<img src="https://github.com/nikoloda/GridPing-Showcase/blob/d192ab8fefad8109541aa15a0fc81d8be2c5a783/src/assets/GridPing.png" alt="GridPing-Showcase" />
-</div>
-
-Demo and Showcase of our GridPing Application: <a href="https://gridping.vercel.app/" target="_blank">Link to Site</a>
-
+![GridPing-Showcase](src/assets/GridPing_WhiteBG.png)
 
 # GridPing — Grid Edge Computing Showcase
 
-GridPing demonstrates a small end-to-end pipeline for processing and displaying grid-edge telemetry. The site highlights three stages: the smart meter at the edge, cloud-hosted storage, and the user-facing application.
+GridPing demonstrates a grid-edge pipeline that processes meter data, stores results in the cloud, and presents them in a simple web app.
+
+[Live site](https://gridping.vercel.app/)
+
+[Source repository](https://github.com/nikoloda/GridPing-Showcase)
 
 ## Sections
 
@@ -22,7 +17,6 @@ GridPing demonstrates a small end-to-end pipeline for processing and displaying 
 - How It Works
 - Application Demo
 - Development Stack (Pipeline Stages)
-- Call-to-Action (CTA)
 - Team
 - Footer
 
@@ -59,7 +53,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173 in your browser. The Application Demo is available in the Services section (anchor `#demo`).
+Open the app in your browser after starting the dev server. The Application Demo is available in the Services section (anchor `#demo`).
 
 ## Notes
 

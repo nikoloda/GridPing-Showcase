@@ -26,7 +26,6 @@ export const MapVisualization = () => {
             borderRadius: "8px",
           }}
           item-id="ea43092f0f24417f9d8a202b54748388"
-          theme="dark"
           legend-enabled="true"
           time-zone-label-enabled="true"
           center="19.550129024798764,51.927339280513806"

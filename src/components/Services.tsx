@@ -12,6 +12,10 @@ export const Services = () => {
           Demo
         </h2>
 
+        <p className="mb-6 max-w-2xl text-muted-foreground">
+          Coming Soon: Web demonstration of GridPing
+        </p>
+
         <iframe
           width="100%"
           height="600"
