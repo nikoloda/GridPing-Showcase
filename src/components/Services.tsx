@@ -12,15 +12,11 @@ export const Services = () => {
           Demo
         </h2>
 
-        <p className="mb-6 max-w-2xl text-muted-foreground">
-          Coming Soon: Web demonstration of GridPing
-        </p>
-
         <iframe
           width="100%"
           height="600"
           title="Demo Application"
-          src="http://localhost:5173/#features"
+          src="https://gridping-demo.vercel.app/"
           style={{
             border: "1px solid var(--border)",
             borderRadius: "8px",
