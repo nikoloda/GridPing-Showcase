@@ -31,6 +31,7 @@ export const MapVisualization = () => {
           center="19.550129024798764,51.927339280513806"
           scale="9244648.868618"
           portal-url="https://osugisci.maps.arcgis.com"
+          disable-sign-in=""
         />
       </div>
     </section>
