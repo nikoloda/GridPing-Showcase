@@ -1,5 +1,6 @@
 import { About } from "./components/About";
 import { Cta } from "./components/Cta";
+import { FutureApplications } from "./components/FutureApplications";
 import { Features } from "./components/Features";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
@@ -16,13 +17,16 @@ function App() {
     <div id="top">
       <Navbar />
       <Hero />
-      <MapVisualization />
-      <About />
-      <HowItWorks />
+      <section className="container py-24 sm:py-32 grid lg:grid-cols-[3fr_2fr] gap-12 items-start">
+        <About />
+        <MapVisualization />
+      </section>
       <Services />
+      <HowItWorks />
       <Features />
       <Cta />
       <Team />
+      <FutureApplications />
       <Footer />
       <ScrollToTop />
     </div>

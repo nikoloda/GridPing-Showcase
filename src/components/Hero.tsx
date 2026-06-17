@@ -1,5 +1,4 @@
-import { Button } from "./ui/button";
-import { buttonVariants } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import { HeroCards } from "./HeroCards";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
@@ -14,7 +13,6 @@ export const Hero = () => {
             </span>{" "}
             at the
           </h1>{" "}
-          {" "}
           <h2 className="inline">
             <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
               Grid Edge
@@ -23,7 +21,7 @@ export const Hero = () => {
         </main>
 
         <p className="text-lg text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Distribute compute to smart meter devices while providing end-users with more information to make decisions detection. Links and notebooks are available
+          Distribute compute to smart meter devices while providing end-users with more information to make informed decisions. Links and notebooks are available
           in the associated research repository.
         </p>
 
@@ -34,13 +32,21 @@ export const Hero = () => {
 
           <a
             rel="noreferrer noopener"
-            href="https://github.com/nikoloda/OSU_Islanding"
+            href="https://github.com/nikoloda/GridPing-Backend"
             target="_blank"
-            className={`w-full md:w-1/3 ${buttonVariants({
-              variant: "outline",
-            })}`}
+            className={`w-full md:w-auto ${buttonVariants({ variant: "outline" })}`}
           >
-            Github Repository
+            Backend Repo
+            <GitHubLogoIcon className="ml-2 w-5 h-5" />
+          </a>
+
+          <a
+            rel="noreferrer noopener"
+            href="https://github.com/nikoloda/GridPing-Deploy"
+            target="_blank"
+            className={`w-full md:w-auto ${buttonVariants({ variant: "outline" })}`}
+          >
+            Frontend Repo
             <GitHubLogoIcon className="ml-2 w-5 h-5" />
           </a>
         </div>

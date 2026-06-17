@@ -22,13 +22,13 @@ const features: FeatureProps[] = [
     iconSrc: dataProcessing,
     title: "Data Processing",
     description:
-      "The current state is compared to the ideal/ expected state to calculate power quality, number of islands, etc.",
+      "The current state is compared to the ideal/expected state to calculate power quality, number of islands, etc.",
   },
   {
     iconSrc: database,
     title: "Data Storage",
     description:
-      "The record is inserted locally into a SQLite DB and/or remotely on an AWS postgreSQL DB",
+      "The record is inserted locally into a SQLite DB and/or remotely on an AWS PostgreSQL DB",
   },
   {
     iconSrc: gauge,

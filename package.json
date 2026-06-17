@@ -1,21 +1,19 @@
 {
-  "name": "shadcn-landing-page-template",
-  "description": "Landing page template utilizing Shadcn, React, Typescript, and Tailwind CSS for rapid development and responsive design.",
+  "name": "gridping-showcase",
+  "description": "GridPing — Grid Edge Computing Showcase. Demonstrates a grid-edge pipeline that processes meter data, stores results in the cloud, and presents them in a user application.",
   "author": {
-    "name": "Leopoldo Miranda",
-    "email": "leomirandadev@gmail.com",
-    "url": "https://github.com/leoMirandaa"
+    "name": "Daniel Nikolov",
+    "email": "nikoloda@oregonstate.edu",
+    "url": "https://github.com/nikoloda"
   },
-  "license": "MIT",
   "keywords": [
     "react",
     "typescript",
     "shadcn",
-    "shadcn/ui",
     "tailwind",
-    "landing-page",
-    "template",
-    "responsive-design"
+    "grid-edge",
+    "power-systems",
+    "smart-meter"
   ],
   "private": true,
   "version": "1.1.0",
@@ -39,6 +37,7 @@
     "lucide-react": "^0.424.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-medium-image-zoom": "^5.4.8",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7"
   },

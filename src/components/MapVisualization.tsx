@@ -9,20 +9,19 @@ export const MapVisualization = () => {
   }, []);
 
   return (
-    <section className="container py-24 sm:py-32">
+    <div className="h-full">
       <div className="flex flex-col items-center gap-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-center">
           <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-            Grid{" "}
+            Poland Grid{" "}
           </span>
-          Visualization
+          Used by Application
         </h2>
 
         <arcgis-embedded-map
           style={{
-            height: "600px",
+            height: "420px",
             width: "100%",
-            maxWidth: "900px",
             borderRadius: "8px",
           }}
           item-id="ea43092f0f24417f9d8a202b54748388"
@@ -34,6 +33,6 @@ export const MapVisualization = () => {
           disable-sign-in=""
         />
       </div>
-    </section>
+    </div>
   );
 };
