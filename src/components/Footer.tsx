@@ -76,7 +76,6 @@ export const Footer = () => {
           </div>
         </div>
 
-        
       </section>
 
       <section className="container pb-14 text-center">

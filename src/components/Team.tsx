@@ -17,10 +17,10 @@ interface TeamProps {
   name: string;
   position: string;
   caption?: string;
-  socialNetworks: SociaNetworkslProps[];
+  socialNetworks: SocialNetworksProps[];
 }
 
-interface SociaNetworkslProps {
+interface SocialNetworksProps {
   name: string;
   url: string;
 }
@@ -45,14 +45,13 @@ const teamList: TeamProps[] = [
   {
     imageUrl: ecsHeadshot,
     name: "Dr. Eduardo Cotilla-Sanchez",
-    position: "Head Researcher",
-    caption: "Head coordinator and expert in power systems and island detection research.",
+    position:"Research Advisor",
+    caption: "Coordinator and expert in power systems and island detection research.",
     socialNetworks: [
       {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/eduardo-cotilla-sanchez-30640935/",
       },
-      // add email here if available
     ],
   },
   {
@@ -65,7 +64,6 @@ const teamList: TeamProps[] = [
         name: "Linkedin",
         url: "https://www.linkedin.com/in/leslyrojascaloca/",
       },
-      // add email here if available
     ],
   },
 ];
@@ -92,10 +90,6 @@ export const Team = () => {
         Research Team
       </h2>
 
-      <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        
-      </p>
-
       <div className="grid justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10">
         {teamList.map(
           ({ imageUrl, name, position, socialNetworks, caption }: TeamProps) => (
@@ -120,7 +114,7 @@ export const Team = () => {
               </CardContent>
 
               <CardFooter className="gap-2">
-                {socialNetworks.map(({ name, url }: SociaNetworkslProps) => (
+                {socialNetworks.map(({ name, url }: SocialNetworksProps) => (
                   <a
                     key={name}
                     rel="noreferrer noopener"

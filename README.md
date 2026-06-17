@@ -18,6 +18,7 @@ GridPing demonstrates a grid-edge pipeline that processes meter data, stores res
 - Application Demo
 - Development Stack (Pipeline Stages)
 - Team
+- Future Applications
 - Footer
 
 ## Key Features

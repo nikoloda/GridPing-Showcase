@@ -28,12 +28,12 @@ const routeList: RouteProps[] = [
     label: "Overview",
   },
   {
-    href: "#features",
-    label: "Software Stack",
-  },
-  {
     href: "#demo",
     label: "Application Demo",
+  },
+  {
+    href: "#features",
+    label: "Software Stack",
   },
   {
     href: "#team",
@@ -75,7 +75,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    GridPing
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -92,7 +92,7 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/nikoloda/OSU_Islanding"
+                    href="https://github.com/nikoloda/GridPing-Showcase"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
@@ -125,7 +125,7 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/nikoloda/OSU_Islanding"
+              href="https://github.com/nikoloda/GridPing-Showcase"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >

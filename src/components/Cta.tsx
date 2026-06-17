@@ -31,11 +31,20 @@ export const Cta = () => {
           </a>
           <a
             rel="noreferrer noopener"
-            href="https://github.com/nikoloda/OSU_Islanding"
+            href="https://github.com/nikoloda/GridPing-Backend"
             target="_blank"
             className={`w-full md:w-auto ${buttonVariants({ variant: "outline" })}`}
           >
-            Visit Github Repo
+            Backend Repo
+            <GitHubLogoIcon className="ml-2 w-5 h-5" />
+          </a>
+          <a
+            rel="noreferrer noopener"
+            href="https://github.com/nikoloda/GridPing-Deploy"
+            target="_blank"
+            className={`w-full md:w-auto ${buttonVariants({ variant: "outline" })}`}
+          >
+            Frontend Repo
             <GitHubLogoIcon className="ml-2 w-5 h-5" />
           </a>
         </div>
