@@ -8,31 +8,29 @@ import headshot from "../assets/headshot.jpeg";
 export const HeroCards = () => {
   return (
     <>
-      {/* Mobile layout */}
-      <div className="flex lg:hidden flex-col gap-4 w-full mt-2">
+      {/* Mobile layout — logo first, other previews below */}
+      <div className="flex xl:hidden flex-col gap-4 w-full mt-2">
+        <img
+          src={gridPing}
+          alt="GridPing preview"
+          className="w-full max-w-[280px] mx-auto object-contain rounded-xl"
+        />
         <div className="grid grid-cols-2 gap-3 items-start">
-          <img
-            src={gridPing}
-            alt="GridPing preview"
-            className="w-full object-contain rounded-xl"
-          />
           <img
             src={dualPhone}
             alt="Dual phone app preview"
             className="w-full object-contain mix-blend-multiply"
           />
+          <img
+            src={simpleMode}
+            alt="Simple mode preview"
+            className="w-full object-contain rounded-xl shadow-md"
+          />
         </div>
-
-        <img
-          src={simpleMode}
-          alt="Simple mode preview"
-          className="w-full object-contain rounded-xl shadow-md"
-        />
-
       </div>
 
       {/* Desktop layout */}
-      <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
+      <div className="hidden xl:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
         <Card className="absolute w-[340px] -top-[15px] overflow-hidden border-0 bg-transparent shadow-none">
           <CardContent className="p-0">
             <img

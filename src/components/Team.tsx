@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import danielHeadshot from "../assets/headshot.jpeg";
 import ecsHeadshot from "../assets/ECS_Headshot.jpg";
 import leslyHeadshot from "../assets/lesly_rojas_headshot.jpg";
@@ -35,6 +35,10 @@ const teamList: TeamProps[] = [
       {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/danielv-nikolov",
+      },
+      {
+        name: "Github",
+        url: "https://github.com/nikoloda",
       },
       {
         name: "Email",
@@ -73,6 +77,8 @@ export const Team = () => {
     switch (iconName) {
       case "Linkedin":
         return <Linkedin size="20" />;
+      case "Github":
+        return <Github size="20" />;
       case "Email":
         return <Mail size="20" />;
     }
@@ -83,7 +89,7 @@ export const Team = () => {
       id="team"
       className="container py-24 sm:py-32"
     >
-      <h2 className="text-3xl md:text-4xl font-bold">
+      <h2 className="text-3xl md:text-4xl font-bold mb-12">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           Our {" "}
         </span>
