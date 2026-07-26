@@ -21,10 +21,10 @@ function App() {
         <About />
         <MapVisualization />
       </section>
+      <Cta />
       <Services />
       <HowItWorks />
       <Features />
-      <Cta />
       <Team />
       <FutureApplications />
       <Footer />

@@ -2,7 +2,7 @@ import pilot from "../assets/logo.png";
 
 export const About = () => {
   return (
-    <div id="about" className="h-full">
+    <div id="about" className="h-full scroll-mt-14">
       <div className="bg-muted/50 border rounded-lg py-10 px-8 h-full">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
           <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
