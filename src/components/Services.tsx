@@ -37,6 +37,7 @@ export const Services = () => {
               border: "none",
               zIndex: 10,
               borderRadius: "6px",
+              colorScheme: "light",
             }}
           />
 
